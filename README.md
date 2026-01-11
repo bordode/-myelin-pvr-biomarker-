@@ -458,3 +458,100 @@ Based on our validation:
 Special thanks to the biophysics community for decades of rigorous lipid spectroscopy research that made this protocol possible. This work stands on the shoulders of countless researchers who established the fundamental relationships between anesthetics and membrane biophysics.
 
 Status: Protocol validated, OSF pre-registered, ready for real-world execution.
+
+Here are the specific additions you can copy and paste into your README:
+
+🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/bordode/-myelin-pvr-biomarker-.git
+cd myelin-pvr-biomarker
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run validation
+python validation/synthetic_dataset.py
+python analysis_pipeline.py
+
+# Analyze your own data
+python analysis_pipeline.py --data /path/to/your/ftir/data/
+```
+
+🤝 Contributing
+We welcome contributions! Please:
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request with detailed description
+
+📋 Issue Templates
+When reporting issues, please use our templates:
+- Bug reports: Include steps to reproduce, expected vs actual behavior
+- Feature requests: Describe the enhancement and its benefits
+- Questions: Be specific about what you need help with
+
+🔧 Technical Notes
+- Python Version: 3.8+ recommended
+- Dependencies: NumPy, SciPy, Matplotlib (see requirements.txt)
+- FTIR Compatibility: Works with standard FTIR formats (CSV, TXT)
+- Validation: Always run synthetic dataset first to verify pipeline
+
+📊 Performance Notes
+- Processing Time: 70s per sample (128 scans at 2 cm⁻¹ resolution)
+- Memory Usage: 50MB per spectrum (typical for FTIR data)
+- Statistical Power: Validated with n=6 (Cohen's d > 1.2)
+
+```
+
+## 📝 Citation Information
+When using this protocol, please cite:
+```bibtex
+@software{myelin_pvr_biomarker_2024,
+  title={Myelin-PVR Biomarker: A Ratiometric FTIR Protocol for Anesthetic-Specific Lipid Packing},
+  author={{AI Roundtable Contributors}},
+  year={2024},
+  url={https://github.com/bordode/-myelin-pvr-biomarker-},
+  note={Protocol validated via synthetic dataset simulation}
+}
+```
+
+🎯 Performance Benchmarks
+Based on our validation:
+- Processing Time: 70s per sample (128 scans at 2 cm⁻¹ resolution)
+- Memory Usage: 50MB per spectrum (typical for FTIR data)
+- Statistical Power: Validated with n=6 (Cohen's d > 1.2)
+- Effect Size: 30% PVR drop for anesthetics (validated against synthetic data)
+
+🔍 Code Quality
+- Linting: Follows PEP 8 style guidelines
+- Type Hints: Uses Python type hints where appropriate
+- Documentation: Comprehensive docstrings throughout
+- Testing: Includes validation against synthetic ground truth
+
+# Clone the repository
+git clone https://github.com/bordode/-myelin-pvr-biomarker-.git
+cd myelin-pvr-biomarker
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run validation
+python validation/synthetic_dataset.py
+python analysis_pipeline.py
+
+# Analyze your own data
+python analysis_pipeline.py --data /path/to/your/ftir/data/
+
+## 📝 Citation Information
+When using this protocol, please cite:
+```bibtex
+@software{myelin_pvr_biomarker_2024,
+  title={Myelin-PVR Biomarker: A Ratiometric FTIR Protocol for Anesthetic-Specific Lipid Packing},
+  author={{AI Roundtable Contributors}},
+  year={2024},
+  url={https://github.com/bordode/-myelin-pvr-biomarker-},
+  note={Protocol validated via synthetic dataset simulation}
+}
